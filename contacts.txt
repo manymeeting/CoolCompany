@@ -1,0 +1,13 @@
+fflush
+fgetc
+fgetcsv
+fgets
+fgetss
+file_​exists
+file_​get_​contents
+file_​put_​contents
+file
+fileatime
+filectime
+filegroup
+fileinode
