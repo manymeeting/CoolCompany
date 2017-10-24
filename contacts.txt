@@ -1,13 +1,17 @@
-fflush
-fgetc
-fgetcsv
-fgets
-fgetss
-file_​exists
-file_​get_​contents
-file_​put_​contents
-file
-fileatime
-filectime
-filegroup
-fileinode
+[
+  {
+    "name" : "Michael",
+    "email" : "000@gmail.com",
+    "tel": "4080000000"
+  },
+  {
+    "name" : "Griffin",
+    "email" : "001@gmail.com",
+    "tel": "4080000001"
+  },
+  {
+    "name" : "Patrick",
+    "email" : "002@gmail.com",
+    "tel": "4080000002"
+  }
+]
