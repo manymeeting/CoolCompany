@@ -1,21 +1,27 @@
-#home_banner {
+#home_banner
+{
   height: 350px;
   background-color: #00a2c7;
   color: #ffffff;
 }
 
-#home_banner .section{
+#home_banner .section
+{
   width: 50%;
 }
 
-#home_banner h1, #home_banner article{
+#home_banner h1, #home_banner article
+{
   text-align: center;
 }
 
-#home_banner article{
+#home_banner article
+{
+  
 }
 
-#home_banner svg{
+#home_banner svg
+{
   height: 80px;
   width: 80px;
   margin: 15px auto 15px auto;
@@ -23,4 +29,20 @@
   display: block;
   opacity: 0.5;
   fill: #ffffff;
+}
+
+
+#home_content h2
+{
+  text-align: center;
+}
+
+#home_content article
+{
+  color: #8a8a8a !important;
+}
+
+#home_content .section-footer-btn
+{
+  text-align: center;
 }
