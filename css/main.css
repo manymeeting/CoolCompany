@@ -15,11 +15,6 @@
   text-align: center;
 }
 
-#home_banner article
-{
-  
-}
-
 #home_banner svg
 {
   height: 80px;
@@ -32,7 +27,12 @@
 }
 
 
-#home_content h2
+#home_content
+{
+  padding-bottom: 40px;
+}
+
+#home_content h3
 {
   text-align: center;
 }
@@ -45,4 +45,32 @@
 #home_content .section-footer-btn
 {
   text-align: center;
+}
+
+#home_contacts
+{
+  background-color: #ffffff;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#home_contacts article
+{
+  padding: 0 30px;
+}
+
+#home_contacts img
+{
+  height: 40px;
+  width: 40px;
+  margin: 15px auto 15px auto;
+  text-align: center;
+  display: block;
+}
+
+#home_footer
+{
+  text-align: center;
+  font-size: 0.5em;
 }
