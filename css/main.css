@@ -1,0 +1,26 @@
+#home_banner {
+  height: 350px;
+  background-color: #00a2c7;
+  color: #ffffff;
+}
+
+#home_banner .section{
+  width: 50%;
+}
+
+#home_banner h1, #home_banner article{
+  text-align: center;
+}
+
+#home_banner article{
+}
+
+#home_banner svg{
+  height: 80px;
+  width: 80px;
+  margin: 15px auto 15px auto;
+  text-align: center;
+  display: block;
+  opacity: 0.5;
+  fill: #ffffff;
+}

@@ -4,12 +4,38 @@
 ?>
 <head>
     <title><?php echo $title; ?></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/vital.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
 </head>
 
 <body>
+  <div class="row header">
+      <div class="section">
+        <nav>
+          <a href = "/" class="logo">
+            <img src="./images/logo.svg" alt="logo">
+          </a>
+          <ul class="menu">
+              <li><a href="./home.php">Home</a></li>
+              <li><a href="./about.php">About</a></li>
+              <li><a href="./news.php">News</a></li>
+          </ul>
+        </nav>
+      </div>
+  </div>
   
-  <h1>Welcome to <?php echo $title; ?>!</h1>
+  <div id="home_banner" class="row">
+    <div class="section">
+      <img src="./images/stars.svg" class="svg" align="middle">
+      <h1>FLY ME TO THE MOON</h1>
+      
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </article>
+    </div>
+  </div>
+  
+  
   <section id="home-section">
     <h3>Home</h3>
     <main>
