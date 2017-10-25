@@ -1,0 +1,5 @@
+img.svg
+{
+  /* all img.svg wil be replaced by svg tag */
+  visibility: hidden;
+}
