@@ -12,11 +12,11 @@
 </head>
 
 <body>
-  <div class="row header">
+  <div id="home_header" class="row header">
       <div class="section">
         <nav>
           <a href = "/" class="logo">
-            <img src="./images/logo.svg" alt="logo">
+            <img src="./images/galaxy.svg" alt="logo">
           </a>
           <ul class="menu">
             <li><a href="./news.php">News</a></li>
