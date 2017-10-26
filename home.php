@@ -1,14 +1,7 @@
 <html>
-<?php
-  $title = "Light Year Travel Agency";
-?>
 <head>
-    <title><?php echo $title; ?></title>
-    <link rel="stylesheet" type="text/css" href="./css/vital.css">
-    <link rel="stylesheet" type="text/css" href="./css/common.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="./js/common.js"></script>
+    <?php require "general_header.php" ?>
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
 </head>
 
 <body>
@@ -101,7 +94,7 @@
   </div>
   
   <div id="home_footer" class="row footer">
-    <p>© 2017 Light Year Trael, Inc.</p>
+    <p>© 2017 Light Year Travel, Inc.</p>
   </div>
 </body>
 </html>
