@@ -20,6 +20,7 @@ if(!isset($_SESSION["valid"]))
             <img src="./images/galaxy.svg" alt="logo">
           </a>
           <ul class="menu">
+            <li><a href="logout.php">Sign Out</a></li>
             <li><a href="./news.php">Users</a></li>
             <li><a href="./news.php">News</a></li>
             <li><a href="./products.php">Products</a></li>
