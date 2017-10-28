@@ -1,13 +1,14 @@
 <?php
 session_start();
 $ADMIN_PWD_FILENAME = "admin_pwd";
-// define $myusername and $mypassword
+$ADMIN_ID = "admin";
+
 $username = $_POST['username'];
 $password = $_POST['password'];
 
 // get saved admin pwd
 $adminPwd = fetchAdminPwd($ADMIN_PWD_FILENAME);
-if(password_verify($password, $adminPwd))
+if(password_verify($password, $adminPwd) && ($username === $ADMIN_ID))
 {
   $_SESSION['valid'] = true;
   header("Location: home.php");
@@ -18,7 +19,6 @@ else
   header("Location: login.php");
   exit();
 }
-
 
 /*
 * Fetch hashed password of admin from a file
