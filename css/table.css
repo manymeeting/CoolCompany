@@ -1,0 +1,14 @@
+.table td, .table th
+{
+  text-align: center;
+}
+
+.table th
+{
+  font-weight: bold;
+}
+
+.table tbody tr:nth-child(odd)
+{
+  background: #e6e6e6;
+}

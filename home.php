@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 <head>
     <?php require "general_header.php" ?>
@@ -12,9 +13,15 @@
             <img src="./images/galaxy.svg" alt="logo">
           </a>
           <ul class="menu">
-            <li><a href="./news.php">News</a></li>
-            <li><a href="./products.php">Products</a></li>
-            <li><a href="./about.php">About</a></li>
+            <?php
+            if(isset($_SESSION["valid"]))
+            {
+              echo '<li><a href="./users.php">Users</a></li>';
+            }
+            ?>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="./home.php">Home</a></li>
           </ul>
         </nav>

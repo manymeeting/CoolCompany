@@ -1,9 +1,9 @@
 <?php
+session_start();
 $ADMIN_PWD_FILENAME = "admin_pwd";
 // define $myusername and $mypassword
 $username = $_POST['username'];
 $password = $_POST['password'];
-
 
 // get saved admin pwd
 $adminPwd = fetchAdminPwd($ADMIN_PWD_FILENAME);
