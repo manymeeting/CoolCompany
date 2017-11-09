@@ -2,7 +2,7 @@
 <html>
 <head>
     <?php require "general_header.php" ?>
-    <link rel="stylesheet" type="text/css" href="./css/home.css">
+    <link rel="stylesheet" type="text/css" href="./css/coolCompany.css">
 </head>
 
 <body>
