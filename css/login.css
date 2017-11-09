@@ -1,7 +1,7 @@
 body
 {
-  background-image: -webkit-radial-gradient(circle, hsla(296,21%,49%,1), hsla(0,0%,0%,1));
-  background-image: radial-gradient(circle, hsla(296,21%,49%,1), hsla(0,0%,0%,1));
+  background-image: url("../images/banner_bg.jpg");
+  background-repeat: no-repeat;
 }
 
 #login_content svg
@@ -12,6 +12,7 @@ body
   text-align: center;
   display: block;
   fill: #ffffff;
+  opacity: 0.3;
 }
 
 #login_content h3

@@ -34,8 +34,8 @@ if(!isset($_SESSION["valid"]))
         </div>
         <div class="boxed-text-outer col-2-3" prodid="2">
           <div class="boxed-text-content">
-            <h2>Cumque nihil impedit</h2>
-            <p>harum quidem rerum facilis est et</p>
+            <h2>Ut enim ad minim veniam</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
           </div>
         </div>
       </div>
