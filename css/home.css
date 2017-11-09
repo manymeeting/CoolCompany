@@ -1,0 +1,43 @@
+/* common parts */
+.coolcp_banner
+{
+  height: 350px;
+  background-color: #00a2c7;
+  color: #ffffff;
+}
+
+.coolcp_banner svg
+{
+  height: 80px;
+  width: 80px;
+  margin: 15px auto 15px auto;
+  text-align: center;
+  display: block;
+  opacity: 0.5;
+  fill: #ffffff;
+}
+
+
+/* special parts */
+#home_contacts
+{
+  background-color: #ffffff;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#home_contacts article
+{
+  padding: 0 30px;
+}
+
+#home_contacts img
+{
+  height: 40px;
+  width: 40px;
+  margin: 15px auto 15px auto;
+  text-align: center;
+  display: block;
+}
+

@@ -9,11 +9,11 @@ if(!isset($_SESSION["valid"]))
 <html>
 <head>
     <?php require "general_header.php" ?>
-    <link rel="stylesheet" type="text/css" href="./css/coolCompany.css">
+    <link rel="stylesheet" type="text/css" href="./css/users.css">
 </head>
 
 <body>
-  <div id="home_header" class="row header">
+  <div class="row header coolcp_header">
       <div class="section ">
         <nav>
           <a href = "/" class="logo">
@@ -30,8 +30,14 @@ if(!isset($_SESSION["valid"]))
         </nav>
       </div>
   </div>
-  
-  <div id="home_content" class="row">
+  <div class="row coolcp_banner">
+    <div class="section">
+      <h1>AMONG THE STARS</h1>
+      
+      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </article>
+    </div>
+  </div>
+  <div class="row coolcp_content">
     <p class="table_title">Current Users</p>
     <table class="table">
       <thead>
@@ -49,7 +55,7 @@ if(!isset($_SESSION["valid"]))
     </table>
   </div>
   
-  <div id="home_footer" class="row footer">
+  <div class="row footer coolcp_footer">
     <p>© 2017 Light Year Travel, Inc.</p>
   </div>
 </body>

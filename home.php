@@ -2,11 +2,11 @@
 <html>
 <head>
     <?php require "general_header.php" ?>
-    <link rel="stylesheet" type="text/css" href="./css/coolCompany.css">
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
 </head>
 
 <body>
-  <div id="home_header" class="row header">
+  <div class="row header coolcp_header">
       <div class="section">
         <nav>
           <a href = "/" class="logo">
@@ -32,7 +32,7 @@
       </div>
   </div>
   
-  <div id="home_banner" class="row">
+  <div class="row coolcp_banner">
     <div class="section">
       <img src="./images/stars.svg" class="svg">
       <h1>FLY ME TO THE MOON</h1>
@@ -41,7 +41,7 @@
     </div>
   </div>
   
-  <div id="home_content" class="row">
+  <div class="row coolcp_content">
     <div class="padded">
       <div id="about-section" class="col-1-3">
         <h3>About Us</h3>
@@ -104,7 +104,7 @@
     </script>
   </div>
   
-  <div id="home_footer" class="row footer">
+  <div class="row footer coolcp_footer">
     <p>© 2017 Light Year Travel, Inc.</p>
   </div>
 </body>
