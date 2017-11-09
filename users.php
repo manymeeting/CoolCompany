@@ -8,7 +8,7 @@ if(!isset($_SESSION["valid"]))
 ?>
 <html>
 <head>
-    <?php require "general_header.php" ?>
+    <?php require "common_head.php" ?>
     <link rel="stylesheet" type="text/css" href="./css/users.css">
 </head>
 

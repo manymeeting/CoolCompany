@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <html>
 <head>
-    <?php require "general_header.php" ?>
+    <?php require "common_head.php" ?>
     <link rel="stylesheet" type="text/css" href="./css/home.css">
 </head>
 
