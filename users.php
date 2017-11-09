@@ -13,23 +13,7 @@ if(!isset($_SESSION["valid"]))
 </head>
 
 <body>
-  <div class="row header coolcp_header">
-      <div class="section ">
-        <nav>
-          <a href = "/" class="logo">
-            <img src="./images/galaxy.svg" alt="logo">
-          </a>
-          <ul class="menu">
-            <li><a href="logout.php">Sign Out</a></li>
-            <li><a href="./news.php">Users</a></li>
-            <li><a href="./news.php">News</a></li>
-            <li><a href="./products.php">Products</a></li>
-            <li><a href="./about.php">About</a></li>
-            <li><a href="./home.php">Home</a></li>
-          </ul>
-        </nav>
-      </div>
-  </div>
+  <?php require "page_header.php" ?>
   <div class="row coolcp_banner">
     <div class="section">
       <h1>AMONG THE STARS</h1>
