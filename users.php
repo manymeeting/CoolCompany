@@ -22,7 +22,7 @@ if(!isset($_SESSION["valid"]))
     </div>
   </div>
   <div class="row coolcp_content">
-    <p class="table_title">Current Users</p>
+    <p class="coolcp_content_title">Current Users</p>
     <table class="table">
       <thead>
         <tr>
