@@ -23,8 +23,8 @@ if(!isset($_SESSION["valid"]))
     </div>
   </div>
   <div class="row coolcp_content">
-    <p class="coolcp_content_title">Amazing Products</p>
     <div class="coolcp_section">
+      <p class="coolcp_content_title">Amazing Products</p>
       <div class="boxed-text">
         <div class="boxed-text-outer col-1-3" prodid="1" >
           <div class="boxed-text-content">
