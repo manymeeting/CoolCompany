@@ -1,0 +1,12 @@
+[
+  {
+    "name" : "SpaceshipI",
+    "id" : "1",
+    "image": "./images/products/spaceship01_thumb.jpg"
+  },
+  {
+    "name" : "SpaceshipII",
+    "id" : "2",
+    "image": "./images/products/spaceship02_thumb.jpg"
+  }
+]

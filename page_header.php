@@ -13,7 +13,7 @@
           }
           ?>
           <li><a href="#">News</a></li>
-          <li><a href="#">Products</a></li>
+          <li><a href="./products.php">Products</a></li>
           <li><a href="#">About</a></li>
           <li><a href="./home.php">Home</a></li>
           
