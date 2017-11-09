@@ -1,14 +1,28 @@
-.table td, .table th
+.table_title
 {
-  text-align: center;
+	font-size: 1.5em;
+	width: 80%;
+	margin: 20px auto 0 auto;
+	text-align: left; 
+	border-bottom: 1px solid #ececec;
 }
 
+.table
+{
+	width: 80%;
+	margin: 20px auto;
+}
 .table th
 {
-  font-weight: bold;
+ 	font-weight: bold;
 }
 
-.table tbody tr:nth-child(odd)
+.table td.text, table tr.text
 {
-  background: #e6e6e6;
+	text-align: left;
+}
+
+.table td.num, table tr.num
+{
+	text-align: right;
 }

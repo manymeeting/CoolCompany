@@ -9,7 +9,7 @@ if(!isset($_SESSION["valid"]))
 <html>
 <head>
     <?php require "general_header.php" ?>
-    <link rel="stylesheet" type="text/css" href="./css/home.css">
+    <link rel="stylesheet" type="text/css" href="./css/coolCompany.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@ if(!isset($_SESSION["valid"]))
   </div>
   
   <div id="home_content" class="row">
-    <h2>Current Users</h2>
+    <p class="table_title">Current Users</p>
     <table class="table">
       <thead>
         <tr>
@@ -42,9 +42,9 @@ if(!isset($_SESSION["valid"]))
         </tr>
       </thead>
       <tbody>
-        <tr><td>Mary</td><td>Smith</td><td>100@xmail.com</td></tr>
-        <tr><td>John</td><td>Wang</td><td>101@xmail.com</td></tr>
-        <tr><td>Alex</td><td>Bington</td><td>102@xmail.com</td></tr>
+        <tr class="text"><td>Mary</td><td>Smith</td><td>100@xmail.com</td></tr>
+        <tr class="text"><td>John</td><td>Wang</td><td>101@xmail.com</td></tr>
+        <tr class="text"><td>Alex</td><td>Bington</td><td>102@xmail.com</td></tr>
       </tbody>
     </table>
   </div>
