@@ -2,7 +2,8 @@
 .coolcp_banner
 {
   height: 350px;
-  background-color: #00a2c7;
+  background-image: url("../images/banner_bg.jpg");
+  background-repeat: no-repeat;
   color: #ffffff;
 }
 
