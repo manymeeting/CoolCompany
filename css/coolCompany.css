@@ -43,6 +43,12 @@
   border-bottom: 1px solid #ececec;
 }
 
+.coolcp_section
+{
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
 .coolcp_footer
 {
   text-align: center;
