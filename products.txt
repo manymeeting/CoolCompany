@@ -2,11 +2,52 @@
   {
     "name" : "SpaceshipI",
     "id" : "1",
-    "image": "./images/products/spaceship01_thumb.jpg"
+    "thumbImg": "./images/products/spaceship01_thumb.jpg"
   },
   {
     "name" : "SpaceshipII",
     "id" : "2",
-    "image": "./images/products/spaceship02_thumb.jpg"
+    "thumbImg": "./images/products/spaceship02_thumb.jpg"
+  },
+  {
+    "name" : "SpaceshipIII",
+    "id" : "3",
+    "thumbImg": "./images/products/spaceship03_thumb.jpg"
+  },
+  {
+    "name" : "SpaceshipIV",
+    "id" : "4",
+    "thumbImg": "./images/products/spaceship04_thumb.jpg"
+  },
+  {
+    "name" : "SpaceshipV",
+    "id" : "5",
+    "thumbImg": "./images/products/spaceship05_thumb.jpg"
+  },
+  {
+    "name" : "SpaceshipVI",
+    "id" : "6",
+    "thumbImg": "./images/products/spaceship06_thumb.jpg"
+  },
+  {
+    "name" : "MerlinA",
+    "id" : "7",
+    "thumbImg": "./images/products/spaceship07_thumb.jpg"
+  },
+  {
+    "name" : "MerlinB",
+    "id" : "8",
+    "thumbImg": "./images/products/spaceship08_thumb.jpg"
+  },
+  {
+    "name" : "MerlinC",
+    "id" : "9",
+    "thumbImg": "./images/products/spaceship09_thumb.jpg"
+  },
+  {
+    "name" : "MerlinD",
+    "id" : "10",
+    "thumbImg": "./images/products/spaceship10_thumb.jpg"
   }
+
 ]
