@@ -38,6 +38,59 @@ if(!isset($_SESSION["valid"]))
             <p>Duis aute irure dolor in reprehenderit in voluptate</p>
           </div>
         </div>
+        <div class="clear"></div>
+        <div class="boxed-text-outer col-2-3" prodid="3" >
+          <div class="boxed-text-content">
+            <h2>Cumque nihil impedit</h2>
+            <p>harum quidem rerum facilis est et</p>
+          </div>
+        </div>
+        <div class="boxed-text-outer col-1-3" prodid="4" >
+          <div class="boxed-text-content">
+            <h2>Cumque nihil impedit</h2>
+            <p>harum quidem rerum facilis est et</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="boxed-text-outer" prodid="5" >
+          <div class="boxed-text-content">
+            <h2>Cumque nihil impedit</h2>
+            <p>harum quidem rerum facilis est et</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="boxed-text-outer col-1-3" prodid="6" >
+          <div class="boxed-text-content">
+            <h2>Cumque nihil impedit</h2>
+            <p>harum quidem rerum facilis est et</p>
+          </div>
+        </div>
+        <div class="boxed-text-outer col-1-3" prodid="7" >
+          <div class="boxed-text-content">
+            <h2>Cumque nihil impedit</h2>
+            <p>harum quidem rerum facilis est et</p>
+          </div>
+        </div>
+        <div class="boxed-text-outer col-1-3" prodid="8" >
+          <div class="boxed-text-content">
+            <h2>Cumque nihil impedit</h2>
+            <p>harum quidem rerum facilis est et</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="boxed-text-outer" prodid="9" >
+          <div class="boxed-text-content">
+            <h2>Cumque nihil impedit</h2>
+            <p>harum quidem rerum facilis est et</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="boxed-text-outer" prodid="10" >
+          <div class="boxed-text-content">
+            <h2>Cumque nihil impedit</h2>
+            <p>harum quidem rerum facilis est et</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
