@@ -1,31 +1,33 @@
-$(document).ready(function() {
-    
-  // $(document).on("click", "#login_submit_btn", function() {
-    
-  // })
-  let productsInfo = $("#productsInfo").html();
-  productsInfo = productsInfo.length > 0 ? eval(productsInfo) : [];
-  loadProductImage(productsInfo);
+(function(){
+	$(document).ready(function() {
+	    
+	  // $(document).on("click", "#login_submit_btn", function() {
+	    
+	  // })
+	  let productsInfo = $("#productsInfo").html();
+	  productsInfo = productsInfo.length > 0 ? eval(productsInfo) : [];
+	  loadThumbImage(productsInfo);
 
 
-});
+	});
 
 
-function loadProductImage(productsInfo)
-{
-	if(!productsInfo || productsInfo.length <= 0)
+	function loadThumbImage(productsInfo)
 	{
-		return;
-	}
-	// render product images
-	for (let i = 0; i < productsInfo.length; i++) {
-		let prodID = productsInfo[i].id;
-		let prodImage = productsInfo[i].image;
-
-		$prodWrapper = $('div[prodid="' + prodID + '"]');
-		if($prodWrapper.length > 0)
+		if(!productsInfo || productsInfo.length <= 0)
 		{
-			$prodWrapper.css("background-image", 'url(' + prodImage + ')');
+			return;
 		}
-	}	
-}
+		// render product images
+		for (let i = 0; i < productsInfo.length; i++) {
+			let prodID = productsInfo[i].id;
+			let thumbImg = productsInfo[i].thumbImg;
+
+			$prodWrapper = $('div[prodid="' + prodID + '"]');
+			if($prodWrapper.length > 0)
+			{
+				$prodWrapper.css("background-image", 'url(' + thumbImg + ')');
+			}
+		}	
+	}
+})();
