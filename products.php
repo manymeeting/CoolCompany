@@ -6,6 +6,26 @@ if(!isset($_SESSION["valid"]))
   exit();
 }
 ?>
+
+<?php
+
+// load products information
+$productsJSON = "";
+$productsFileName = 'products.txt';
+
+$productsFile = fopen($productsFileName, "r") or die("Unable to open file");
+$productsJSON = $productsJSON . fread($productsFile,filesize($productsFileName));
+fclose($productsFile);
+$products = json_decode($productsJSON);
+
+// get previously viewed from cookie
+$preViewed = array();
+$preViewedJSON = $_COOKIE["preViewed"];
+if(strlen($preViewedJSON) > 0)
+{
+  $preViewed = json_decode($preViewedJSON);
+}
+?>
 <html>
 <head>
     <?php require "common_head.php" ?>
@@ -25,85 +45,100 @@ if(!isset($_SESSION["valid"]))
   <div class="row coolcp_content">
 
     <!-- last five previously visited products -->
-    <div class="coolcp_section">
-      <p class="coolcp_content_title">Previously Viewed</p>
-      <p>
-        <a href="#" class="btn small solid round coolcp_tag_links">solid round</a>
-        <a href="#" class="btn small solid round coolcp_tag_links">solid round gray-dark</a>
-        <a href="#" class="btn small solid round coolcp_tag_links">solid round</a>
-        <a href="#" class="btn small solid round coolcp_tag_links">solid round</a>
-        <a href="#" class="btn small solid round coolcp_tag_links">solid round gray-light</a>
-      </p>
-      
-    </div>
+    <?php 
+      if(count($preViewed) > 0)
+      {
+        require("./page_sections/pre_viewed_prod.php");
+      }
+    ?>
 
     <div class="coolcp_section">
       <p class="coolcp_content_title">Amazing Products</p>
       <div class="boxed-text">
         <div class="boxed-text-outer col-1-3" prodid="1" >
-          <div class="boxed-text-content">
-            <h2>Cumque nihil impedit</h2>
-            <p>harum quidem rerum facilis est et</p>
-          </div>
+          <a href="productDetail.php?id=1">
+            <div class="boxed-text-content">
+              <h2>Cumque nihil impedit</h2>
+              <p>harum quidem rerum facilis est et</p>
+            </div>
+          </a>
         </div>
         <div class="boxed-text-outer col-2-3" prodid="2">
-          <div class="boxed-text-content">
-            <h2>Ut enim ad minim veniam</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate</p>
-          </div>
+          <a href="productDetail.php?id=2">
+            <div class="boxed-text-content">
+              <h2>Ut enim ad minim veniam</h2>
+              <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+            </div>
+          </a>
         </div>
         <div class="clear"></div>
         <div class="boxed-text-outer col-2-3" prodid="3" >
-          <div class="boxed-text-content">
-            <h2>Cumque nihil impedit</h2>
-            <p>harum quidem rerum facilis est et</p>
-          </div>
+          <a href="productDetail.php?id=3">
+            <div class="boxed-text-content">
+              <h2>Cumque nihil impedit</h2>
+              <p>harum quidem rerum facilis est et</p>
+            </div>
+          </a>
         </div>
         <div class="boxed-text-outer col-1-3" prodid="4" >
-          <div class="boxed-text-content">
-            <h2>Cumque nihil impedit</h2>
-            <p>harum quidem rerum facilis est et</p>
-          </div>
+          <a href="productDetail.php?id=4">
+            <div class="boxed-text-content">
+              <h2>Cumque nihil impedit</h2>
+              <p>harum quidem rerum facilis est et</p>
+            </div>
+          </a>
         </div>
         <div class="clear"></div>
         <div class="boxed-text-outer" prodid="5" >
-          <div class="boxed-text-content">
-            <h2>Cumque nihil impedit</h2>
-            <p>harum quidem rerum facilis est et</p>
-          </div>
+          <a href="productDetail.php?id=5">
+            <div class="boxed-text-content">
+              <h2>Cumque nihil impedit</h2>
+              <p>harum quidem rerum facilis est et</p>
+            </div>
+          </a>  
         </div>
         <div class="clear"></div>
         <div class="boxed-text-outer col-1-3" prodid="6" >
-          <div class="boxed-text-content">
-            <h2>Cumque nihil impedit</h2>
-            <p>harum quidem rerum facilis est et</p>
-          </div>
+          <a href="productDetail.php?id=6">
+            <div class="boxed-text-content">
+              <h2>Cumque nihil impedit</h2>
+              <p>harum quidem rerum facilis est et</p>
+            </div>
+          </a>
         </div>
         <div class="boxed-text-outer col-1-3" prodid="7" >
-          <div class="boxed-text-content">
-            <h2>Cumque nihil impedit</h2>
-            <p>harum quidem rerum facilis est et</p>
-          </div>
+          <a href="productDetail.php?id=7">
+            <div class="boxed-text-content">
+              <h2>Cumque nihil impedit</h2>
+              <p>harum quidem rerum facilis est et</p>
+            </div>
+          </a>
         </div>
         <div class="boxed-text-outer col-1-3" prodid="8" >
-          <div class="boxed-text-content">
-            <h2>Cumque nihil impedit</h2>
-            <p>harum quidem rerum facilis est et</p>
-          </div>
+          <a href="productDetail.php?id=8">
+            <div class="boxed-text-content">
+              <h2>Cumque nihil impedit</h2>
+              <p>harum quidem rerum facilis est et</p>
+            </div>
+          </a>
         </div>
         <div class="clear"></div>
         <div class="boxed-text-outer" prodid="9" >
-          <div class="boxed-text-content">
-            <h2>Cumque nihil impedit</h2>
-            <p>harum quidem rerum facilis est et</p>
-          </div>
+          <a href="productDetail.php?id=9">
+            <div class="boxed-text-content">
+              <h2>Cumque nihil impedit</h2>
+              <p>harum quidem rerum facilis est et</p>
+            </div>
+          </a>
         </div>
         <div class="clear"></div>
         <div class="boxed-text-outer" prodid="10" >
-          <div class="boxed-text-content">
-            <h2>Cumque nihil impedit</h2>
-            <p>harum quidem rerum facilis est et</p>
-          </div>
+          <a href="productDetail.php?id=10">
+            <div class="boxed-text-content">
+              <h2>Cumque nihil impedit</h2>
+              <p>harum quidem rerum facilis est et</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -113,14 +148,11 @@ if(!isset($_SESSION["valid"]))
     <p>© 2017 Light Year Travel, Inc.</p>
   </div>
 
-  <!-- load products information -->
+  <!-- provide products information in JSON for js -->
   <json class="json" id="productsInfo">
     <?php
-        $productsFileName = 'products.txt';
-        $productsInfo = fopen($productsFileName, "r") or die("Unable to open file");
-        echo fread($productsInfo,filesize($productsFileName));
-        fclose($productsInfo);
-        ?>;
+        echo $productsJSON;
+    ?>;
   </json>
 </body>
 </html>
