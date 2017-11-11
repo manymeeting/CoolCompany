@@ -1,31 +1,31 @@
 [
   {
-    "name" : "SpaceshipI",
+    "name" : "ChallengerI",
     "id" : "1",
     "thumbImg": "./images/products/spaceship01_thumb.jpg"
   },
   {
-    "name" : "SpaceshipII",
+    "name" : "ChallengerII",
     "id" : "2",
     "thumbImg": "./images/products/spaceship02_thumb.jpg"
   },
   {
-    "name" : "SpaceshipIII",
+    "name" : "ChallengerIII",
     "id" : "3",
     "thumbImg": "./images/products/spaceship03_thumb.jpg"
   },
   {
-    "name" : "SpaceshipIV",
+    "name" : "ChallengerIV",
     "id" : "4",
     "thumbImg": "./images/products/spaceship04_thumb.jpg"
   },
   {
-    "name" : "SpaceshipV",
+    "name" : "ChallengerV",
     "id" : "5",
     "thumbImg": "./images/products/spaceship05_thumb.jpg"
   },
   {
-    "name" : "SpaceshipVI",
+    "name" : "ChallengerVI",
     "id" : "6",
     "thumbImg": "./images/products/spaceship06_thumb.jpg"
   },
