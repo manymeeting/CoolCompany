@@ -1,14 +1,8 @@
 (function(){
 	$(document).ready(function() {
-	    
-	  // $(document).on("click", "#login_submit_btn", function() {
-	    
-	  // })
 	  let productsInfo = $("#productsInfo").html();
 	  productsInfo = productsInfo.length > 0 ? eval(productsInfo) : [];
 	  loadThumbImage(productsInfo);
-
-
 	});
 
 
@@ -29,5 +23,10 @@
 				$prodWrapper.css("background-image", 'url(' + thumbImg + ')');
 			}
 		}	
+	}
+
+	function gotoDetail()
+	{
+
 	}
 })();
