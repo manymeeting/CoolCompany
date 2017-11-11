@@ -42,6 +42,11 @@
   border-bottom: 1px solid #ececec;
 }
 
+.coolcp_tag_links
+{
+  margin: 5px 10px 0 0;
+}
+
 .coolcp_article_img
 {
   width: 100%;

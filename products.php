@@ -23,6 +23,20 @@ if(!isset($_SESSION["valid"]))
     </div>
   </div>
   <div class="row coolcp_content">
+
+    <!-- last five previously visited products -->
+    <div class="coolcp_section">
+      <p class="coolcp_content_title">Previously Viewed</p>
+      <p>
+        <a href="#" class="btn small solid round coolcp_tag_links">solid round</a>
+        <a href="#" class="btn small solid round coolcp_tag_links">solid round gray-dark</a>
+        <a href="#" class="btn small solid round coolcp_tag_links">solid round</a>
+        <a href="#" class="btn small solid round coolcp_tag_links">solid round</a>
+        <a href="#" class="btn small solid round coolcp_tag_links">solid round gray-light</a>
+      </p>
+      
+    </div>
+
     <div class="coolcp_section">
       <p class="coolcp_content_title">Amazing Products</p>
       <div class="boxed-text">
