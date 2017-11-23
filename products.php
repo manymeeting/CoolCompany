@@ -53,7 +53,9 @@ if(strlen($preViewedJSON) > 0)
     ?>
 
     <div class="coolcp_section">
-      <p class="coolcp_content_title">Amazing Products</p>
+      <div class="coolcp_section_header">
+        <p>Amazing Products</p>
+      </div>
       <div class="boxed-text">
         <div class="boxed-text-outer col-1-3" prodid="1" >
           <a href="productDetail.php?id=1">

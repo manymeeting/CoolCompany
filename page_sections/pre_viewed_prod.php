@@ -10,7 +10,9 @@ Required:
 	]
 -->
 <div class="coolcp_section">
-  <p class="coolcp_content_title">Previously Viewed</p>
+  <div class="coolcp_section_header">
+    <p>Previously Viewed</p>
+  </div>
   <p>
   	<?php
   		for ($i=0; $i < count($preViewed); $i++)
