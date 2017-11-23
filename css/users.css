@@ -8,7 +8,7 @@
 }
 
 /* special parts */
-#userSearchBtn, #userCreateBtn
+#userSearchBtn, #userCreateBtn, #cancelBtn
 {
 	float: right;
 	display: inline-block;
