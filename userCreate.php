@@ -29,7 +29,7 @@ if(!isset($_SESSION["valid"]))
       <div class="autogrid full-width-forms">
         <div class="col-1-4 space"></div>
         <div class="col-1-2">
-          <div class="box no-first-last bg-white">
+          <div class="no-first-last">
             <p>
               <label><small>First Name</small></label><input placeholder="Michael" type="text">
             </p>
