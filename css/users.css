@@ -8,9 +8,17 @@
 }
 
 /* special parts */
-#userSearchBtn, #userCreateBtn, #cancelBtn
+#userSearchBtn, #userCreateBtn, 
+#cancelBtn, #userSearchInput, 
+#userSearchType,
+#userSearchTitle
 {
-	float: right;
 	display: inline-block;
 	margin: 0 10px 0 0;
 }
+
+#userSearchTitle
+{
+	font-size: 0.9em;
+}
+

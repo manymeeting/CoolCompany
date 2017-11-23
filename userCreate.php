@@ -23,8 +23,7 @@ if(!isset($_SESSION["valid"]))
   <div class="row coolcp_content">
     <div class="coolcp_section"> 
       <div class="coolcp_section_header">
-        <span class="coolcp_section_header_title">Add a new user</span>
-        <a href="users.php" id="cancelBtn" class="btn small round no-outline">Cancel</a>
+        <span class="coolcp_section_header_title center">Add User</span>
       </div>
       <div class="autogrid full-width-forms">
         <div class="col-1-4 space"></div>

@@ -24,10 +24,22 @@ if(!isset($_SESSION["valid"]))
     <div class="coolcp_section"> 
       <div class="coolcp_section_header">
         <span class="coolcp_section_header_title">Users</span>
-        <a href="userCreate.php" id="userCreateBtn" class="btn small round no-outline green">Create</a>
-        <a id="userSearchBtn" class="btn small round no-outline">Search</a>
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+      <div>
+        <span id="userSearchTitle">Search By: </span>
+        <select id="userSearchType">
+          <optgroup label="group 1">
+            <option>select option</option>
+            <option>select option</option>
+            <option>select option</option>
+          </optgroup>
+        </select>
+        <input id="userSearchInput" placeholder="..." type="search">
+        <a id="userSearchBtn" class="btn small round no-outline">Search</a>
+        <a href="userCreate.php" id="userCreateBtn" class="btn small round no-outline green">Create</a>
+      </div>
+      
       <table class="table">
         <thead>
           <tr>
