@@ -44,7 +44,7 @@
 {
   margin: 0;
   font-size: 1.5em;
-  text-align: left; 
+  display: block;
 }
 
 .coolcp_tag_links
