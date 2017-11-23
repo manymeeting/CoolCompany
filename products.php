@@ -54,7 +54,7 @@ if(strlen($preViewedJSON) > 0)
 
     <div class="coolcp_section">
       <div class="coolcp_section_header">
-        <p>Amazing Products</p>
+        <span class="coolcp_section_header_title">Amazing Products</span>
       </div>
       <div class="boxed-text">
         <div class="boxed-text-outer col-1-3" prodid="1" >

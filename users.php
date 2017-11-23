@@ -24,7 +24,7 @@ if(!isset($_SESSION["valid"]))
   <div class="row coolcp_content">
     <div class="coolcp_section"> 
       <div class="coolcp_section_header">
-        <p>Current Users</p>
+        <span class="coolcp_section_header_title">Current Users</span>
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
       <table class="table">

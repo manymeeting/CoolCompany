@@ -11,7 +11,7 @@ Required:
 -->
 <div class="coolcp_section">
   <div class="coolcp_section_header">
-    <p>Previously Viewed</p>
+    <span class="coolcp_section_header_title">Previously Viewed</span>
   </div>
   <p>
   	<?php
