@@ -17,14 +17,15 @@ if(!isset($_SESSION["valid"]))
   <div class="row coolcp_banner">
     <div class="section">
       <h1>AMONG THE STARS</h1>
-      
       <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </article>
     </div>
   </div>
   <div class="row coolcp_content">
     <div class="coolcp_section"> 
       <div class="coolcp_section_header">
-        <span class="coolcp_section_header_title">Current Users</span>
+        <span class="coolcp_section_header_title">Users</span>
+        <a id="userCreateBtn" class="btn small solid round green">Create</a>
+        <a id="userSearchBtn" class="btn small solid round gray-dark">Search</a>
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
       <table class="table">

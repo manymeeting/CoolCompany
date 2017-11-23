@@ -6,3 +6,11 @@
   	background-repeat: no-repeat;
   	color: #ffffff;
 }
+
+/* special parts */
+#userSearchBtn, #userCreateBtn
+{
+	float: right;
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
