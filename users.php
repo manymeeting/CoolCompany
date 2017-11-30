@@ -5,6 +5,7 @@ require 'includes/functions.php';
 <head>
     <?php require "common_head.php" ?>
     <link rel="stylesheet" type="text/css" href="./css/users.css">
+    <script type="text/javascript" src="./js/users.js"></script>
 </head>
 
 <body>
@@ -22,19 +23,23 @@ require 'includes/functions.php';
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
       <div>
-        <span id="userSearchTitle">Search By: </span>
-        <select id="userSearchType">
-          <optgroup label="Search Options">
-            <option>First Name</option>
-            <option>Last Name</option>
-            <option>Home Address</option>
-            <option>Home Phone</option>
-            <option>Cell Phone</option>
-          </optgroup>
-        </select>
-        <input id="userSearchInput" placeholder="..." type="search">
-        <a id="userSearchBtn" class="btn small round no-outline">Search</a>
-        <a href="userCreate.php" id="userCreateBtn" class="btn small round no-outline green">Create</a>
+        <form id="userSearchForm" method="post" action="searchUsers.php">
+          <span id="userSearchTitle">Search By: </span>
+          <select id="userSearchType" name="userSearchBy">
+            <optgroup label="Search Options">
+              <option value="firstname">First Name</option>
+              <option value="lastname">Last Name</option>
+              <option value="homeaddr">Home Address</option>
+              <option value="homephone">Home Phone</option>
+              <option value="cellphone">Cell Phone</option>
+            </optgroup>
+          </select>
+          <input id="userSearchInput" name="userSearchVal" placeholder="..." type="search">
+          <a id="userSearchBtn" class="btn small round no-outline">Search</a>  
+          <a href="userCreate.php" id="userCreateBtn" class="btn small round no-outline green">Create</a>
+        </form>
+        
+        
       </div>
       
       <table class="table">
@@ -49,11 +54,18 @@ require 'includes/functions.php';
           </tr>
         </thead>
         <tbody>
-          <?php 
-          $userForm = new UserForm;
-          $result = $userForm->fetchAllUser();
-
-          foreach ($result as $row) {
+          <?php
+          if(isset($_SESSION["userSearchResult"]))
+          {
+            $users = $_SESSION["userSearchResult"];
+            $_SESSION['userSearchResult'] = null;
+          }
+          else
+          {
+            $userForm = new UserForm;
+            $users = $userForm->fetchAllUser();
+          }
+          foreach ($users as $row) {
               $html =
               '<tr class="text">'. 
                 "<td>".$row['firstname']."</td>".
