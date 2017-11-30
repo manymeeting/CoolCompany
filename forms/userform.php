@@ -9,9 +9,11 @@ class UserForm extends DbConn
             $db = new DbConn;
             $tbl_members = $db->tbl_members;
             // prepare sql and bind parameters
-            $dbstr = "SELECT * FROM " . $tbl_members . " WHERE " . $searchBy . " = :value";
+            $dbstr = "SELECT * FROM " . $tbl_members . " WHERE " . $searchBy . " LIKE " . ":value";
             $stmt = $db->conn->prepare($dbstr);
+            $searchValue = '%' . $searchValue . '%';
             $stmt->bindParam(':value', $searchValue);
+            
             $stmt->execute();
             $result = $stmt->fetchAll();
 
