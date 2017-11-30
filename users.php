@@ -1,10 +1,5 @@
 <?php
-session_start();
-if(!isset($_SESSION["valid"]))
-{
-  header("Location: login.php");
-  exit();
-}
+require 'includes/functions.php';
 ?>
 <html>
 <head>
@@ -54,15 +49,23 @@ if(!isset($_SESSION["valid"]))
           </tr>
         </thead>
         <tbody>
-          <tr class="text">
-            <td>Mary</td><td>Smith</td><td>100@xmail.com</td><td>asd,CA</td><td>123-123-123</td><td>123-123-123</td>
-          </tr>
-          <tr class="text">
-            <td>Mary</td><td>Smith</td><td>100@xmail.com</td><td>asd,CA</td><td>123-123-123</td><td>123-123-123</td>
-          </tr>
-          <tr class="text">
-            <td>Mary</td><td>Smith</td><td>100@xmail.com</td><td>asd,CA</td><td>123-123-123</td><td>123-123-123</td>
-          </tr>
+          <?php 
+          $userForm = new UserForm;
+          $result = $userForm->fetchAllUser();
+
+          foreach ($result as $row) {
+              $html =
+              '<tr class="text">'. 
+                "<td>".$row['firstname']."</td>".
+                "<td>".$row['lastname']."</td>".
+                "<td>".$row['email']."</td>".
+                "<td>".$row['homeaddr']."</td>".
+                "<td>".$row['homephone']."</td>".
+                "<td>".$row['cellphone']."</td>".
+              '</tr>';
+              print $html. "\n";
+          }
+          ?>
         </tbody>
       </table>
     </div>
