@@ -46,12 +46,21 @@ if(!isset($_SESSION["valid"]))
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
+            <th>Home Address</th>
+            <th>Home Phone</th>
+            <th>Cell Phone</th>
           </tr>
         </thead>
         <tbody>
-          <tr class="text"><td>Mary</td><td>Smith</td><td>100@xmail.com</td></tr>
-          <tr class="text"><td>John</td><td>Wang</td><td>101@xmail.com</td></tr>
-          <tr class="text"><td>Alex</td><td>Bington</td><td>102@xmail.com</td></tr>
+          <tr class="text">
+            <td>Mary</td><td>Smith</td><td>100@xmail.com</td><td>asd,CA</td><td>123-123-123</td><td>123-123-123</td>
+          </tr>
+          <tr class="text">
+            <td>Mary</td><td>Smith</td><td>100@xmail.com</td><td>asd,CA</td><td>123-123-123</td><td>123-123-123</td>
+          </tr>
+          <tr class="text">
+            <td>Mary</td><td>Smith</td><td>100@xmail.com</td><td>asd,CA</td><td>123-123-123</td><td>123-123-123</td>
+          </tr>
         </tbody>
       </table>
     </div>
