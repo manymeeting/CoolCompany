@@ -29,10 +29,12 @@ if(!isset($_SESSION["valid"]))
       <div>
         <span id="userSearchTitle">Search By: </span>
         <select id="userSearchType">
-          <optgroup label="group 1">
-            <option>select option</option>
-            <option>select option</option>
-            <option>select option</option>
+          <optgroup label="Search Options">
+            <option>First Name</option>
+            <option>Last Name</option>
+            <option>Home Address</option>
+            <option>Home Phone</option>
+            <option>Cell Phone</option>
           </optgroup>
         </select>
         <input id="userSearchInput" placeholder="..." type="search">
