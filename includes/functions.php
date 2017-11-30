@@ -1,4 +1,12 @@
 <?php
+// Check if session is valid
+session_start();
+if(!isset($_SESSION["valid"]))
+{
+  header("Location: login.php");
+  exit();
+}
+
 //Class Autoloader
 spl_autoload_register(function ($className) {
 

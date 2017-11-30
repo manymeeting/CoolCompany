@@ -1,6 +1,34 @@
 <?php
 class UserForm extends DbConn
 {
+
+    public function searchUser()
+    {
+
+    }
+
+    public function fetchAllUser()
+    {
+        try
+        {
+            $db = new DbConn;
+            $tbl_members = $db->tbl_members;
+            // prepare sql and bind parameters
+            $dbstr = "SELECT * FROM " . $tbl_members;
+            $result = $db->conn->query($dbstr);
+
+            $err = '';
+        }
+        catch (PDOException $e)
+        {
+            $err = "Error: " . $e->getMessage();
+            $result = null;
+        }
+
+        return $this->_ret($err, $result);
+        
+    }
+
     public function createUser($usr, $email, $pw, $firstname, $lastname, $homephone, $homeaddr, $cellphone)
     {
         try {
@@ -29,8 +57,19 @@ class UserForm extends DbConn
             $err = "Error: " . $e->getMessage();
 
         }
+        return $this->_ret($err, null);
+
+    }
+
+    private function _ret($err, $result)
+    {
         //Determines returned value ('true' or error code)
         if ($err == '') {
+
+            if(!is_null($result))
+            {
+                return $result;
+            }
 
             $success = 'true';
 
@@ -41,6 +80,5 @@ class UserForm extends DbConn
         };
 
         return $success;
-
     }
 }
