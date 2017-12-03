@@ -11,12 +11,14 @@ $adminPwd = fetchAdminPwd($ADMIN_PWD_FILENAME);
 if(password_verify($password, $adminPwd) && ($username === $ADMIN_ID))
 {
   $_SESSION['valid'] = true;
-  header("Location: home.php");
+  $home_location = "home.php";
+  header("Location: " . $home_location);
   exit();
 }
 else
 {
-  header("Location: login.php");
+  $login_location = "login.php";
+  header("Location: " . $login_location);
   exit();
 }
 
