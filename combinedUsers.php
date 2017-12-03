@@ -6,8 +6,10 @@
 
 <body>
   <?php 
-    // local
-    $url = "http://127.0.0.1/CoolCompany/api/myusers.php";
+    require dirname(__FILE__).'/' . 'config.php';
+
+    // local users
+    $url = "http://" . HOST_ADDR . "/CoolCompany/api/myusers.php";
 
     $post_data = array ();
 
@@ -25,6 +27,8 @@
 
     curl_close($cu);
 
+    // Nancy's users
+    
   ?>
 </body>
 </html>
