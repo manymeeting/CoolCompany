@@ -9,7 +9,7 @@
     require dirname(__FILE__).'/' . 'config.php';
 
     // local users
-    $url_local = "http://" . HOST_ADDR . "/CoolCompany/api/myusers.php";
+    $url_local = "http://" . LOCAL_HOST_ADDR . "/CoolCompany/api/myusers.php";
 
     $post_data = array ();
 
