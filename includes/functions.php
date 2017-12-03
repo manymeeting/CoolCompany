@@ -1,20 +1,10 @@
 <?php
-// Check if session is valid
-session_start();
-if(!isset($_SESSION["valid"]))
-{
-  header("Location: login.php");
-  exit();
-}
-
 //Class Autoloader
 spl_autoload_register(function ($className) {
-
     $className = strtolower($className);
-    $includes = "includes/{$className}.php";
-    $forms = "forms/{$className}.php";
-    $dbconn = "dbconn/{$className}.php";
-
+    $includes = dirname(__FILE__).'/' . "../includes/{$className}.php";
+    $forms = dirname(__FILE__).'/' . "../forms/{$className}.php";
+    $dbconn = dirname(__FILE__).'/' . "../dbconn/{$className}.php";
     if (file_exists($includes)) {
 
         require_once($includes);
@@ -33,4 +23,5 @@ spl_autoload_register(function ($className) {
 
     }
 });
+
 ?>

@@ -20,7 +20,7 @@ class DbConn
     public $conn;
     public function __construct()
     {
-        require 'dbconn/dbconf.php';
+        require dirname(__FILE__). '/' . 'dbconf.php';
         $this->host = $host; // Host name
         $this->username = $username; // Mysql username
         $this->password = $password; // Mysql password

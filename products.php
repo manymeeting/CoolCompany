@@ -1,5 +1,6 @@
 <?php
-require 'includes/functions.php';
+session_start();
+require dirname(__FILE__).'/' . 'includes/functions.php';
 ?>
 
 <?php

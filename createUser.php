@@ -1,5 +1,7 @@
 <?php
-require 'includes/functions.php';
+session_start();
+require dirname(__FILE__).'/' . 'checkSession.php';
+require dirname(__FILE__).'/' . 'includes/functions.php';
 //Pull username, generate new ID and hash password
 $pw = $_POST['password'];
 $hashedPW = "";
