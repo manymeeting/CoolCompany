@@ -16,7 +16,7 @@
           <div class="col-1-2">
             <h3 class="center">Sign In</h3>
             <div class="box bg-white no-first-last">
-              <form method="post" action="checklogin.php">
+              <form method="post" action="checkLogin.php">
                 <p>
                   <input name="username" placeholder="Username" type="text">
                   <input name="password" placeholder="Password" type="password">
